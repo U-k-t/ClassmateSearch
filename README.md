@@ -33,4 +33,4 @@ Example Text Inputs are Included
 
 ## Known Bugs
 
-* FindGirls.py Will Output Some Guys with Unisex Names and Omit Some Girls with Obscure Names
+* FindGirls.py Will Omit Some Girls with Obscure Names and Names Included on the Unisex List. A Variable can be Changed to Adjust the Output of Unisex Names.
