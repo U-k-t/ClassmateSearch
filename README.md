@@ -8,29 +8,25 @@ With the start of Fall 2020 coming around, everything is online due to COVID-19.
 
 ## Development setup
 
-Everything is within the Python Standard Library
+* Ensure you're using Python 3 or greater and are running a unix based OS (Sorry Windows Users!)
+
+* Ensure you have Google Chrome installed
 
 
 ## Instructions
 
-* Go to your Blackboard Class
-* Access the "Email Select Users" at
-```
-/webapps/blackboard/execute/displayEmail?navItem=email_select_students&course_id={YOUR CLASS ID HERE}
-```
-* View Page Source and Copy the Options in USERS_AVAIL
-* Save the Text to a .txt File in TXT_Input
-* Repeat for All Other Classes
-* Run Cleaner.py to Format the Text Files as JSON
-* Navigate Directories and Run Either FindOverlap.py or FindGirls.Py
+* Run classmateSearch.py.
+* It will ensure that all necessary libraries get installed, and will walk you through the program
 
-Example Text Inputs are Included
 
 ## Release History
 
+* 0.1.1
+    * Added Blackboard Webscraping and driver program
+    * Renamed FindGirls.py to FindClassmates.py and incorporated male search
 * 0.1.0
     * Initial Release - FindGirls.Py and FindOverlap.Py
 
 ## Known Bugs
 
-* FindGirls.py Will Omit Some Girls with Obscure Names and Names Included on the Unisex List. A Variable can be Changed to Adjust the Output of Unisex Names.
+* There are some inconsistencies in finding classmates by gender due to unisex names and obscure names
