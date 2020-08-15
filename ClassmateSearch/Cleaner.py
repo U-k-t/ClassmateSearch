@@ -1,15 +1,9 @@
 # Cleaner.py
 # Used to convert HTML-Littered Class Roster to JSON File
 
-# Instructions:
-# Roster Available on Blackboard at /webapps/blackboard/execute/displayEmail?navItem=email_select_students&course_id=
-# View Page Source and Copy the Options in USERS_AVAIL
-# Save to a .txt file in TXT_Input
-
 import os, json, re
 
-def clean():
-    path = os.path.dirname(os.path.abspath(os.getcwd()))
+def clean(path):
     htmlMatch = re.compile('\<(.*?)\>')
 
     for file in os.listdir("{}/TXT_input".format(path)): #Iterate Over Files In TXT_Input

@@ -6,10 +6,8 @@ from selenium.webdriver import ActionChains
 from ClassmateSearch.config import getUsername
 from ClassmateSearch.config import getPassword
 
-def scrape():
-
+def scrape(path):
     class_ids = []
-    path = os.path.dirname(os.path.abspath(os.getcwd()))
 
     ## Webdriver Config
     chrome_options = Options()
@@ -20,7 +18,7 @@ def scrape():
 
     ## LogIn to MyCPP with SSO
     driver.get('https://my.cpp.edu')
-    time.sleep(2)
+    time.sleep(5)
     if (driver.find_element_by_name('_eventId_proceed')!= None):
         driver.find_element_by_id('username').send_keys(getUsername())
         driver.find_element_by_id ('password').send_keys(getPassword())
@@ -28,7 +26,7 @@ def scrape():
 
     ## Access Blackboard
         driver.get('https://blackboard.cpp.edu/auth-saml/saml/login?apId=_172_1&redirectUrl=https%3A%2F%2Fblackboard.cpp.edu%2Fwebapps%2Fportal%2Fexecute%2FdefaultTab')
-        time.sleep(2)
+        time.sleep(5)
         source = driver.find_element_by_id('My_Courses_Tools')
         courses = source.get_attribute('outerHTML').split('Course&amp')
 

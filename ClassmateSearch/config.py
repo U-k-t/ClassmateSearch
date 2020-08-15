@@ -1,4 +1,5 @@
-## LogIn Config
+# LogIn Config for Webdriver
+
 def getUsername():
     username = input("Enter Username: ")
     return username
