@@ -15,7 +15,9 @@ With the start of Fall 2020 coming around, everything is online due to COVID-19.
 
 ## Instructions
 
-* Run classmateSearch.py.
+* Delete the demo files in TXT_Input and JSON_Output, if you plan on scraping your own classes.
+
+* Run classmateSearch.py
 * It will ensure that all necessary libraries get installed, and will walk you through the program
 
 
